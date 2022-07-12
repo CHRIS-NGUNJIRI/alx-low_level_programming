@@ -1,18 +1,20 @@
-# include "main.h"
+#include "main.h"
 /**
- * rev_string - function reverses a string
- * @s: loohcS yM
+ * puts2 - prints every other character of a string
+ * @str: the string to print
+ *
  */
-void rev_string(char *s)
+void puts2(char *str)
 {
-int i = 0, len = 0;
-char tmp;
-while (s[i++])
-len++;
-for (i = len - 1; i >= len / 2; i--)
+int i;
+int j;
+for (i = 0 ; str[i] != '\0' ; i++)
 {
-tmp = s[i];
-s[i] = s[len - i - 1];
-s[len - i - 1] = tmp;
+;
 }
+for (j = 0 ; j < i ; j = j + 2)
+{
+_putchar(str[j]);
+}
+_putchar('\n');
 }
