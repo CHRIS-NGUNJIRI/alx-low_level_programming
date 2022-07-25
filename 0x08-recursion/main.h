@@ -1,27 +1,37 @@
-#ifndef MAIN_H
+#include "main.h"
 
-#define MAIN_H
+/**
+ *
+ *  * more_numbers - nmbr fct
+ *
+ *   * Return: no return
+ *
+ *    */
 
-void _puts_recursion(char *s);
+void more_numbers(void)
 
-void _print_rev_recursion(char *s);
+{
 
-int _strlen_recursion(char *s);
+	int i, j;
 
-int factorial(int n);
+	for (i = 1; i <= 10; i++)
 
-int _pow_recursion(int x, int y);
+	{
 
-int _sqrt_recursion(int n);
+		for (j = 0; j <= 14; j++)
 
-int is_prime_number(int n);
+		{
 
-int is_palindrome(char *s);
+			if (j >= 10)
 
-int wildcmp(char *s1, char *s2);
+				_putchar('1');
 
-int _putchar(char c);
+			_putchar(j % 10 + '0');
 
-#include <stdio.h>
+		}
 
-#endif /*MAIN_H*/
+		_putchar('\n');
+
+	}
+
+}
